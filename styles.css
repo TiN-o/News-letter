@@ -1,0 +1,97 @@
+body{
+    background-image: url("asserts/background.png");
+}
+
+
+.main_form{
+    color: yellow;
+    border: 2px solid yellow;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    backdrop-filter: visible;
+    backdrop-filter: blur(10px);
+    margin: 90px 250px 70px 350px;
+}
+fieldset{
+    width: 400px;
+    border-radius: 10px;
+    border-color: yellow;
+    
+}
+
+button{
+    border: none;
+    padding: 10px 10px;
+    width: 150px;
+    color: yellow;
+    background-color: orange;
+    cursor: pointer;
+    font-style: bold;
+    border: 2px solid yellow;
+    border-radius: 15px;
+    transition-duration: 0.6s;
+    text-align: center;
+    margin-left: 120px;
+     animation: bounce 3s ease infinite;
+
+}
+
+button:hover{
+    background-color: yellow;
+    border: 2px solid orange;
+    color: orange;
+}
+
+button:active{
+    text-indent: 20px;
+    box-shadow: 3px 5px 15px black;
+}
+
+input{
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    padding: 4px 4px;
+}
+legend{
+    color: orange;
+    font-style: italic;
+;
+}
+
+/*.spinner{
+    width: 40px;
+    height: 40px;
+    border: red 3px solid;
+    border-radius: 50%;
+    border-top: blue solid 3px;
+    animation: spin .5s ease  infinite;
+    z-index: 10;
+}
+*/
+
+
+@keyframes bounce {
+   0%{
+    transform: translateY(0);
+
+   } 
+   50%{
+    transform: translateY(10px);
+   }
+   100%{
+    transform: translateY(0);
+   }
+}
+/*}
+
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}*/
